@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -70,8 +71,10 @@
               <div><span>related_work</span><strong>SBCC frontend and data visualisation</strong></div>
             </div>
             <figure class="visual-placeholder">
-              <img src="assets/research-workflow.png" alt="Equity-aware simulation workflow: geometric modelling, occupant and climate data collection, thermal simulation with calibration iterations, and scenario analysis comparing cooling energy performance across intervention types.">
-              <figcaption>Fig. 1 &ndash; Equity-aware simulation workflow, from geometric modelling through scenario analysis.</figcaption>
+              <model-viewer src="assets/testing.glb" alt="3D model of the simulated public housing block used in the thermal comfort study." camera-controls auto-rotate auto-rotate-delay="1500" shadow-intensity="1" exposure="1" environment-image="neutral" loading="lazy" reveal="interaction">
+                <p slot="poster" class="model-poster">Loading 3D model&hellip;</p>
+              </model-viewer>
+              <figcaption>Fig. 1 &ndash; 3D model of the simulated housing block. Drag to orbit, scroll to zoom.</figcaption>
             </figure>
             <p class="paper-note">Presented &ldquo;The thermal comfort divide in Singapore&rsquo;s high-density public housing: An equity-aware simulation workflow&rdquo; at the World Sustainable Built Environment Conference in Australia.</p>
           </div>
