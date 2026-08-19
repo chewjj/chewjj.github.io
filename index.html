@@ -5,105 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Chew Jia Jing - Infrastructure and Project Management undergraduate and student researcher.">
     <title>Chew Jia Jing - Built Environment Research</title>
+    <meta name="theme-color" content="#0b0f14">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Chew Jia Jing, home">CJJ</a>
-      <p class="header-status">Singapore / Built environment</p>
-      <nav aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#profile">Profile</a>
-      </nav>
-    </header>
-
-    <main id="main">
-      <!-- Intro: the page's main identity and working focus. -->
-      <section class="hero" id="top" aria-labelledby="page-title">
-        <p class="eyebrow">01 / PROFILE</p>
-        <div class="hero-copy">
-          <h1 id="page-title">Chew<br>Jia Jing</h1>
-          <p class="hero-statement">Infrastructure and Project Management undergraduate investigating more equitable, sustainable built environments.</p>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <a class="wordmark" href="#top" aria-label="Chew Jia Jing, home">CJJ<span class="cursor" aria-hidden="true">_</span></a>
+          <p class="sidebar-status">Singapore<br>Built environment</p>
         </div>
-        <dl class="hero-meta">
-          <div><dt>Based in</dt><dd>Singapore</dd></div>
-          <div><dt>Study</dt><dd>NUS, BEng Infrastructure and Project Management</dd></div>
-          <div><dt>Expected graduation</dt><dd>May 2027</dd></div>
-        </dl>
-      </section>
 
-      <!-- Featured research record: metadata is treated as part of the composition. -->
-      <section class="feature section-grid" id="research" aria-labelledby="research-title">
-        <aside class="section-label">
-          <p>02 / FEATURED RESEARCH</p>
-          <span aria-hidden="true">↘</span>
-        </aside>
-        <div class="feature-content">
-          <div class="record-head">
-            <p class="record-number">RESEARCH / 01</p>
-            <p class="record-date">2025 - present</p>
+        <nav aria-label="Primary navigation" class="sidebar-nav">
+          <a href="#top" data-nav="top"><span class="nav-index">00</span>Profile</a>
+          <a href="#research" data-nav="research"><span class="nav-index">01</span>Research</a>
+          <a href="#experience" data-nav="experience"><span class="nav-index">02</span>Experience</a>
+          <a href="#profile" data-nav="profile"><span class="nav-index">03</span>Credentials</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="mailto:chewjiajing02@gmail.com">chewjiajing02@gmail.com</a>
+          <a href="https://www.linkedin.com/in/jia-jing-chew-a86653229">LinkedIn &#8599;</a>
+          <p class="sidebar-meta">CJJ / 2026<br>SGT &middot; UTC+8</p>
+        </div>
+      </aside>
+
+      <main id="main">
+        <!-- Intro: the page's main identity and working focus. -->
+        <section class="hero" id="top" aria-labelledby="page-title">
+          <p class="eyebrow">00 / PROFILE</p>
+          <div class="hero-copy">
+            <h1 id="page-title">Chew<br>Jia Jing</h1>
+            <p class="hero-statement">Infrastructure and Project Management undergraduate investigating more equitable, sustainable built environments.</p>
           </div>
-          <h2 id="research-title">Thermal comfort, urban heat, and equity in Singapore public housing.</h2>
-          <p class="lede">Student Researcher at City Syntax Lab, NUS, addressing urban heat inequality and climate-change impacts in high-density public housing flats.</p>
-          <div class="data-panel" aria-label="Research metadata">
-            <div><span>Organisation</span><strong>City Syntax Lab, NUS</strong></div>
-            <div><span>Location</span><strong>Singapore</strong></div>
-            <div><span>Output</span><strong>WSBE Conference paper</strong></div>
-            <div><span>Related work</span><strong>SBCC frontend and data visualisation</strong></div>
-          </div>
-          <figure class="visual-placeholder">
-            <div class="grid-field" aria-hidden="true">
-              <span class="marker marker-one"></span><span class="marker marker-two"></span><span class="marker marker-three"></span>
+          <dl class="hero-meta">
+            <div><dt>based_in</dt><dd>Singapore</dd></div>
+            <div><dt>study</dt><dd>NUS, BEng Infrastructure and Project Management</dd></div>
+            <div><dt>graduation</dt><dd>May 2027</dd></div>
+          </dl>
+        </section>
+
+        <!-- Featured research record: metadata is treated as part of the composition. -->
+        <section class="feature section-grid" id="research" aria-labelledby="research-title">
+          <aside class="section-label">
+            <p>01 / FEATURED RESEARCH</p>
+            <span aria-hidden="true">&#8600;</span>
+          </aside>
+          <div class="feature-content">
+            <div class="record-head">
+              <p class="record-number">RESEARCH / 01</p>
+              <p class="record-date">2025 &ndash; present</p>
             </div>
-            <figcaption>PROJECT VISUAL PLACEHOLDER / Add an approved simulation, diagram, or Singapore Building Carbon Calculator interface image in <code>assets/</code>.</figcaption>
-          </figure>
-          <p class="paper-note">Presented “The thermal comfort divide in Singapore’s high-density public housing: An equity-aware simulation workflow” at the World Sustainable Built Environment Conference in Australia.</p>
-        </div>
-      </section>
-
-      <!-- Experience is a concise chronological index, not a card grid. -->
-      <section class="experience section-grid" id="experience" aria-labelledby="experience-title">
-        <aside class="section-label"><p>03 / EXPERIENCE</p></aside>
-        <div>
-          <div class="section-heading"><h2 id="experience-title">Applied work</h2><p>Facilities management, sustainability, and operations.</p></div>
-          <ol class="experience-list">
-            <li>
-              <p class="list-date">May - Jul 2026</p><div><h3>JTC Corporation <span>/ Facility Management Intern</span></h3><p>Developed an automated workflow for tracking PO and occupancy data; proposed sustainability initiatives and liaised with contractors on implementation.</p></div>
-            </li>
-            <li>
-              <p class="list-date">May - Jul 2025</p><div><h3>National Trades Union Congress <span>/ FM Intern</span></h3><p>Identified energy-conservation opportunities and developed a Power Automate workflow for technician responses to occupant-reported issues.</p></div>
-            </li>
-            <li>
-              <p class="list-date">Apr - Jul 2023</p><div><h3>Jones Lang LaSalle <span>/ FM Intern</span></h3><p>Supported IRAS facilities management operations, vendor management, data collection, and performance analysis.</p></div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="profile section-grid" id="profile" aria-labelledby="profile-title">
-        <aside class="section-label"><p>04 / PROFILE</p></aside>
-        <div class="profile-content">
-          <h2 id="profile-title">Education, recognition, and working tools.</h2>
-          <div class="profile-columns">
-            <section><h3>Education</h3><p><strong>National University of Singapore</strong><br>BEng, Infrastructure and Project Management<br>Aug 2024 - present</p><p><strong>Temasek Polytechnic</strong><br>Diploma in Integrated Facility Management, Merit (Top 10%)<br>Apr 2021 - Apr 2024</p></section>
-            <section><h3>Selected recognition</h3><ul><li>Kong Mun Kwong Scholarship, AY25/26 and AY26/27</li><li>Commendation Award for Final Year Project - Green Mark Assessment and Proposal for MBCCS</li><li>Director’s List Award, 2022-2024</li><li>SIFMA YFMA Lion Excellence Award</li></ul></section>
-            <section><h3>Tools</h3><p>Python, Power Automate, Excel, Rhino 8, IESVE 2023, BIM HVAC Tool, KNIME Analytics Platform, Autodesk Revit 2022.</p><p>English and Mandarin, spoken and written.</p></section>
+            <h2 id="research-title">Thermal comfort, urban heat, and equity in Singapore public housing.</h2>
+            <p class="lede">Student Researcher at City Syntax Lab, NUS, addressing urban heat inequality and climate-change impacts in high-density public housing flats.</p>
+            <div class="data-panel" aria-label="Research metadata">
+              <div><span>organisation</span><strong>City Syntax Lab, NUS</strong></div>
+              <div><span>location</span><strong>Singapore</strong></div>
+              <div><span>output</span><strong>WSBE Conference paper</strong></div>
+              <div><span>related_work</span><strong>SBCC frontend and data visualisation</strong></div>
+            </div>
+            <figure class="visual-placeholder">
+              <div class="grid-field" aria-hidden="true">
+                <span class="marker marker-one"></span><span class="marker marker-two"></span><span class="marker marker-three"></span>
+              </div>
+              <figcaption>PROJECT VISUAL PLACEHOLDER / Add an approved simulation, diagram, or Singapore Building Carbon Calculator interface image in <code>assets/</code>.</figcaption>
+            </figure>
+            <p class="paper-note">Presented &ldquo;The thermal comfort divide in Singapore&rsquo;s high-density public housing: An equity-aware simulation workflow&rdquo; at the World Sustainable Built Environment Conference in Australia.</p>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
 
-    <footer class="site-footer">
-      <p>Available via email</p>
-      <a href="mailto:chewjiajing02@gmail.com">chewjiajing02@gmail.com</a>
-      <a href="https://www.linkedin.com/in/jia-jing-chew-a86653229">LinkedIn ↗</a>
-      <p class="footer-code">CJJ / 2026 / SGT UTC+8</p>
-    </footer>
+        <!-- Experience is a concise chronological index, not a card grid. -->
+        <section class="experience section-grid" id="experience" aria-labelledby="experience-title">
+          <aside class="section-label"><p>02 / EXPERIENCE</p></aside>
+          <div>
+            <div class="section-heading"><h2 id="experience-title">Applied work</h2><p>Facilities management, sustainability, and operations.</p></div>
+            <ol class="experience-list">
+              <li>
+                <p class="list-date"><span aria-hidden="true">//</span> May &ndash; Jul 2026</p><div><h3>JTC Corporation <span>/ Facility Management Intern</span></h3><p>Developed an automated workflow for tracking PO and occupancy data; proposed sustainability initiatives and liaised with contractors on implementation.</p></div>
+              </li>
+              <li>
+                <p class="list-date"><span aria-hidden="true">//</span> May &ndash; Jul 2025</p><div><h3>National Trades Union Congress <span>/ FM Intern</span></h3><p>Identified energy-conservation opportunities and developed a Power Automate workflow for technician responses to occupant-reported issues.</p></div>
+              </li>
+              <li>
+                <p class="list-date"><span aria-hidden="true">//</span> Apr &ndash; Jul 2023</p><div><h3>Jones Lang LaSalle <span>/ FM Intern</span></h3><p>Supported IRAS facilities management operations, vendor management, data collection, and performance analysis.</p></div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="profile section-grid" id="profile" aria-labelledby="profile-title">
+          <aside class="section-label"><p>03 / CREDENTIALS</p></aside>
+          <div class="profile-content">
+            <h2 id="profile-title">Education, recognition, and working tools.</h2>
+            <div class="profile-columns">
+              <section><h3># education</h3><p><strong>National University of Singapore</strong><br>BEng, Infrastructure and Project Management<br>Aug 2024 &ndash; present</p><p><strong>Temasek Polytechnic</strong><br>Diploma in Integrated Facility Management, Merit (Top 10%)<br>Apr 2021 &ndash; Apr 2024</p></section>
+              <section><h3># recognition</h3><ul><li>Kong Mun Kwong Scholarship, AY25/26 and AY26/27</li><li>Commendation Award for Final Year Project &ndash; Green Mark Assessment and Proposal for MBCCS</li><li>Director&rsquo;s List Award, 2022&ndash;2024</li><li>SIFMA YFMA Lion Excellence Award</li></ul></section>
+              <section><h3># tools</h3><p>Python, Power Automate, Excel, Rhino 8, IESVE 2023, BIM HVAC Tool, KNIME Analytics Platform, Autodesk Revit 2022.</p><p>English and Mandarin, spoken and written.</p></section>
+            </div>
+          </div>
+        </section>
+
+        <p class="eof" aria-hidden="true">$ end of file &mdash; thanks for reading</p>
+      </main>
+    </div>
+
+    <script>
+      // Highlights the sidebar nav entry for the section currently in view.
+      var links = document.querySelectorAll('.sidebar-nav a');
+      var sections = Array.prototype.map.call(links, function (a) {
+        return document.getElementById(a.getAttribute('href').slice(1));
+      });
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            var index = sections.indexOf(entry.target);
+            if (index === -1) return;
+            links[index].classList.toggle('is-active', entry.isIntersecting);
+          });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        sections.forEach(function (section) { if (section) observer.observe(section); });
+      }
+    </script>
   </body>
 </html>
