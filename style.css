@@ -77,7 +77,9 @@ h2 { max-width: 17ch; margin: clamp(1.2rem, 3vw, 2.5rem) 0 1.1rem; font-family: 
 
 .visual-placeholder { margin: 0; }
 .visual-placeholder model-viewer { display: block; width: 100%; aspect-ratio: 16 / 10; border: 1px solid var(--line); background: var(--panel); --poster-color: transparent; }
-.model-poster { display: flex; align-items: center; justify-content: center; height: 100%; margin: 0; font: .72rem var(--mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: var(--panel); }
+.model-poster { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .5rem; height: 100%; margin: 0; font: .72rem var(--mono); letter-spacing: .04em; text-transform: uppercase; text-align: center; color: var(--muted); background: var(--panel); }
+.model-poster-pct { color: var(--accent); }
+.model-poster small { display: block; font: .62rem var(--mono); letter-spacing: .04em; text-transform: none; color: var(--dim); }
 .visual-placeholder figcaption { margin-top: .6rem; }
 .visual-placeholder code { font: inherit; color: var(--ink); }
 .paper-note { max-width: 42rem; margin: 2.5rem 0 0; padding-left: 1rem; border-left: 2px solid var(--accent); color: var(--muted); }

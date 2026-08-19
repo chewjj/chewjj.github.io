@@ -71,8 +71,8 @@
               <div><span>related_work</span><strong>SBCC frontend and data visualisation</strong></div>
             </div>
             <figure class="visual-placeholder">
-              <model-viewer src="assets/testing.glb" alt="3D model of the simulated public housing block used in the thermal comfort study." camera-controls auto-rotate auto-rotate-delay="1500" shadow-intensity="1" exposure="1" environment-image="neutral" loading="lazy" reveal="auto">
-                <p slot="poster" class="model-poster">Loading 3D model&hellip;</p>
+              <model-viewer id="research-model" src="assets/testing.glb" alt="3D model of the simulated public housing block used in the thermal comfort study." camera-controls auto-rotate auto-rotate-delay="1500" shadow-intensity="1" exposure="1" environment-image="neutral" loading="lazy" reveal="auto">
+                <p slot="poster" class="model-poster">Loading 3D model&hellip; <span class="model-poster-pct">0%</span><br><small>21MB &ndash; first load may take a moment</small></p>
               </model-viewer>
               <figcaption>Fig. 1 &ndash; 3D model of the simulated housing block. Drag to orbit, scroll to zoom.</figcaption>
             </figure>
@@ -130,6 +130,15 @@
           });
         }, { rootMargin: '-40% 0px -55% 0px' });
         sections.forEach(function (section) { if (section) observer.observe(section); });
+      }
+
+      // Real download progress for the research model, since it's a large file.
+      var modelViewer = document.getElementById('research-model');
+      var pct = document.querySelector('.model-poster-pct');
+      if (modelViewer && pct) {
+        modelViewer.addEventListener('progress', function (event) {
+          pct.textContent = Math.round(event.detail.totalProgress * 100) + '%';
+        });
       }
     </script>
   </body>
